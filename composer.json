@@ -1,0 +1,20 @@
+{
+    "name": "creativecoder/piwik-analytics",
+    "type": "project",
+    "require": {
+        "piwik/piwik": "^3.0",
+        "php": "^7.1",
+        "ext-curl": "*",
+        "ext-gd": "*",
+        "ext-xml": "*",
+        "ext-mbstring": "*"
+    },
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Grant Kinney",
+            "email": "hi@grant.mk"
+        }
+    ],
+    "minimum-stability": "stable"
+}

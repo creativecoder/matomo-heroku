@@ -1,0 +1,47 @@
+# Always-ignore extensions #
+############################
+*.bak
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+*.un~
+*.sass-cache
+
+# OS generated files #
+######################
+*~
+.svn
+.cvs
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime*
+
+# Folders to ignore #
+#####################
+.hg
+.svn
+.CVS
+.idea
+node_modules
+dist
+.rvmrc
+.vagrant
+vendor
