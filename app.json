@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dokku": {
+      "predeploy": "cp config.ini.php vendor/piwik/piwik/config/"
+    }
+  }
+}

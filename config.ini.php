@@ -9,7 +9,7 @@ tables_prefix = "piwik_"
 
 [General]
 salt = ${SALT}
-trusted_hosts[] = "pottytrainingmadison.com"
+trusted_hosts[] = "analytics.grant.mk"
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"
