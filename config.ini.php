@@ -71,4 +71,5 @@ PluginsInstalled[] = "Marketplace"
 PluginsInstalled[] = "ProfessionalServices"
 PluginsInstalled[] = "UserId"
 PluginsInstalled[] = "CustomPiwikJs"
+PluginsInstalled[] = "SecurityInfo"
 
