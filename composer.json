@@ -11,6 +11,10 @@
                   "url": "https://github.com/piwik/plugin-SecurityInfo",
                   "type": "git",
                   "reference": "3.0.4"
+                },
+                "type": "piwik-plugin",
+                "require": {
+                    "composer/installers": "~1.0"
                 }
             }
         }
@@ -33,6 +37,11 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp -R vendor/piwik/plugin-SecurityInfo/ vendor/piwik/piwik/plugins/SecurityInfo"
+        "post-install-cmd": "cp config.ini.php vendor/piwik/piwik/config/"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/piwik/piwik/plugins/{$name}/": ["type:piwik-plugin"]
+        }
     }
 }
