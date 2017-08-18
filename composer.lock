@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7333a5b213039e11783a99b740032633",
+    "content-hash": "78fbb0c13b4e0641b67187f598d263ff",
     "packages": [
         {
             "name": "composer/installers",
@@ -811,6 +811,19 @@
             "time": "2015-11-29T10:34:25+00:00"
         },
         {
+            "name": "piwik/SecurityInfo",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piwik/plugin-SecurityInfo",
+                "reference": "3.0.4"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "piwik-plugin"
+        },
+        {
             "name": "piwik/cache",
             "version": "1.0.1",
             "source": {
@@ -1128,19 +1141,6 @@
                 "tracker"
             ],
             "time": "2017-02-18T09:41:30+00:00"
-        },
-        {
-            "name": "piwik/plugin-SecurityInfo",
-            "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/piwik/plugin-SecurityInfo",
-                "reference": "3.0.4"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "piwik-plugin"
         },
         {
             "name": "piwik/referrer-spam-blacklist",

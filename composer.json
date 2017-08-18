@@ -5,7 +5,7 @@
         {
             "type":"package",
             "package": {
-              "name": "piwik/plugin-SecurityInfo",
+              "name": "piwik/SecurityInfo",
               "version": "3.0.4",
               "source": {
                   "url": "https://github.com/piwik/plugin-SecurityInfo",
@@ -26,7 +26,7 @@
         "ext-gd": "*",
         "ext-xml": "*",
         "ext-mbstring": "*",
-        "piwik/plugin-SecurityInfo": "^3.0"
+        "piwik/SecurityInfo": "^3.0"
     },
     "license": "GPL-3.0",
     "authors": [
