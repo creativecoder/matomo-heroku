@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "97c4c61aeee168f9604fd2afc0a7dc51",
+    "content-hash": "6df81159523a979f7a9e4979cd2d667d",
     "packages": [
         {
             "name": "composer/semver",
@@ -1011,6 +1011,16 @@
                 "tracker"
             ],
             "time": "2017-02-18T09:41:30+00:00"
+        },
+        {
+            "name": "piwik/plugin-SecurityInfo",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/piwik/plugin-SecurityInfo",
+                "reference": "3.0.4"
+            },
+            "type": "library"
         },
         {
             "name": "piwik/referrer-spam-blacklist",

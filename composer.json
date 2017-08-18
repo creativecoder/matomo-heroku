@@ -1,13 +1,28 @@
 {
     "name": "creativecoder/piwik-analytics",
     "type": "project",
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+              "name": "piwik/plugin-SecurityInfo",
+              "version": "3.0.4",
+              "source": {
+                  "url": "https://github.com/piwik/plugin-SecurityInfo",
+                  "type": "git",
+                  "reference": "3.0.4"
+                }
+            }
+        }
+    ],
     "require": {
         "piwik/piwik": "^3.0",
         "php": "^7.1",
         "ext-curl": "*",
         "ext-gd": "*",
         "ext-xml": "*",
-        "ext-mbstring": "*"
+        "ext-mbstring": "*",
+        "piwik/plugin-SecurityInfo": "^3.0"
     },
     "license": "GPL-3.0",
     "authors": [
@@ -16,5 +31,8 @@
             "email": "hi@grant.mk"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "scripts": {
+        "post-install-cmd": "cp -R vendor/piwik/plugin-SecurityInfo/ vendor/piwik/piwik/plugins/SecurityInfo"
+    }
 }
