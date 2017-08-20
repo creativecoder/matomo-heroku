@@ -38,7 +38,7 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp config.ini.php vendor/piwik/piwik/config/"
+        "post-install-cmd": "cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
     },
     "extra": {
         "installer-paths": {
