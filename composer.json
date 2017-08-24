@@ -5,16 +5,19 @@
         {
             "type":"package",
             "package": {
-              "name": "piwik/SecurityInfo",
-              "version": "3.0.4",
-              "source": {
-                  "url": "https://github.com/piwik/plugin-SecurityInfo",
-                  "type": "git",
-                  "reference": "3.0.4"
+                "name": "piwik/plugin-SecurityInfo",
+                "version": "3.0.4",
+                "source": {
+                    "url": "https://github.com/piwik/plugin-SecurityInfo.git",
+                    "type": "git",
+                    "reference": "3.0.4"
                 },
                 "type": "piwik-plugin",
                 "require": {
                     "composer/installers": "~1.0"
+                },
+                "extra": {
+                    "installer-name": "SecurityInfo"
                 }
             }
         }
@@ -26,7 +29,7 @@
         "ext-gd": "*",
         "ext-xml": "*",
         "ext-mbstring": "*",
-        "piwik/SecurityInfo": "^3.0",
+        "piwik/plugin-SecurityInfo": "^3.0",
         "geoip2/geoip2": "^2.6"
     },
     "license": "GPL-3.0",
@@ -38,11 +41,6 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
-    },
-    "extra": {
-        "installer-paths": {
-            "vendor/piwik/piwik/plugins/{$name}/": ["type:piwik-plugin"]
-        }
+        "post-install-cmd": "mv plugins/* vendor/piwik/piwik/plugins/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
     }
 }
