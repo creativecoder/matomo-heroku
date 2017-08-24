@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "37ae2f3dc1e3c3b6a286fbe03b698f89",
+    "content-hash": "87d3b9c8a973d981dd0f32c18599452a",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -278,10 +278,11 @@
         {
             "name": "diabl0/piwik-geoip2",
             "version": "0.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/diabl0/piwik-geoip2.git",
-                "reference": "v0.1.5"
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/diabl0/piwik-geoip2/archive/v0.1.5.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "geoip2/geoip2": "^2.4"
@@ -1371,10 +1372,11 @@
         {
             "name": "piwik/plugin-SecurityInfo",
             "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/piwik/plugin-SecurityInfo.git",
-                "reference": "3.0.4"
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/piwik/plugin-SecurityInfo/archive/3.0.4.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"

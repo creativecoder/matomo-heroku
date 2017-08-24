@@ -7,10 +7,9 @@
             "package": {
                 "name": "piwik/plugin-SecurityInfo",
                 "version": "3.0.4",
-                "source": {
-                    "url": "https://github.com/piwik/plugin-SecurityInfo.git",
-                    "type": "git",
-                    "reference": "3.0.4"
+                "dist": {
+                    "url": "https://github.com/piwik/plugin-SecurityInfo/archive/3.0.4.zip",
+                    "type": "zip"
                 },
                 "type": "piwik-plugin",
                 "require": {
@@ -37,10 +36,9 @@
                 "require": {
                     "geoip2/geoip2": "^2.4"
                 },
-                "source": {
-                    "url": "https://github.com/diabl0/piwik-geoip2.git",
-                    "type": "git",
-                    "reference": "v0.1.5"
+                "dist": {
+                    "url": "https://github.com/diabl0/piwik-geoip2/archive/v0.1.5.zip",
+                    "type": "zip"
                 },
                 "type": "piwik-plugin",
                 "extra": {
@@ -69,6 +67,6 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp -Rf plugins/ vendor/piwik/piwik/plugins/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
+        "post-install-cmd": "cp -R plugins/* vendor/piwik/piwik/plugins/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
     }
 }
