@@ -3,7 +3,7 @@
     "type": "project",
     "repositories": [
         {
-            "type":"package",
+            "type": "package",
             "package": {
                 "name": "piwik/plugin-SecurityInfo",
                 "version": "3.0.4",
@@ -20,6 +20,33 @@
                     "installer-name": "SecurityInfo"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "diabl0/piwik-geoip2",
+                "version": "0.1.5",
+                "description": "Plugin for Piwik adding support for MaxMind GeoIP2 database.",
+                "license": "GPL-3.0+",
+                "authors": [
+                    {
+                      "name": "Krzysztof Szatanik",
+                      "homepage": "https://github.com/diabl0/piwik-geoip2"
+                    }
+                ],
+                "require": {
+                    "geoip2/geoip2": "^2.4"
+                },
+                "source": {
+                    "url": "https://github.com/diabl0/piwik-geoip2.git",
+                    "type": "git",
+                    "reference": "v0.1.5"
+                },
+                "type": "piwik-plugin",
+                "extra": {
+                    "installer-name": "GeoIP2"
+                }
+            }
         }
     ],
     "require": {
@@ -30,7 +57,8 @@
         "ext-xml": "*",
         "ext-mbstring": "*",
         "piwik/plugin-SecurityInfo": "^3.0",
-        "geoip2/geoip2": "^2.6"
+        "geoip2/geoip2": "^2.6",
+        "diabl0/piwik-geoip2": "^0.1.5"
     },
     "license": "GPL-3.0",
     "authors": [
@@ -41,6 +69,6 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "mv plugins/* vendor/piwik/piwik/plugins/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
+        "post-install-cmd": "cp -Rf plugins/ vendor/piwik/piwik/plugins/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
     }
 }

@@ -45,3 +45,4 @@ dist
 .rvmrc
 .vagrant
 vendor
+plugins/

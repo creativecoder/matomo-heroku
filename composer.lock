@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "256c98d45c037e7d007c863081daf136",
+    "content-hash": "37ae2f3dc1e3c3b6a286fbe03b698f89",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -274,6 +274,32 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "diabl0/piwik-geoip2",
+            "version": "0.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/diabl0/piwik-geoip2.git",
+                "reference": "v0.1.5"
+            },
+            "require": {
+                "geoip2/geoip2": "^2.4"
+            },
+            "type": "piwik-plugin",
+            "extra": {
+                "installer-name": "GeoIP2"
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Szatanik",
+                    "homepage": "https://github.com/diabl0/piwik-geoip2"
+                }
+            ],
+            "description": "Plugin for Piwik adding support for MaxMind GeoIP2 database."
         },
         {
             "name": "doctrine/cache",
