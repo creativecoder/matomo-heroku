@@ -1,5 +1,5 @@
 {
-    "name": "creativecoder/piwik-analytics",
+    "name": "creativecoder/dokku-piwik",
     "type": "project",
     "repositories": [
         {
