@@ -46,3 +46,4 @@ dist
 .vagrant
 vendor
 plugins/
+misc/

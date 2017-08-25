@@ -5,6 +5,39 @@
         {
             "type": "package",
             "package": {
+                "name": "piwik/piwik-icons",
+                "type": "piwik-plugin",
+                "version": "0.0.2",
+                "dist": {
+                    "url": "https://github.com/piwik/piwik-icons/archive/master.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "extra": {
+                    "installer-name": "icons"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "piwik/piwik-log-analytics",
+                "type": "piwik-plugin",
+                "version": "0.0.1",
+                "dist": {
+                    "url": "https://github.com/piwik/piwik-log-analytics/archive/master.zip",
+                    "type": "zip"
+                },
+                "extra": {
+                    "installer-name": "log-analytics"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "piwik/plugin-SecurityInfo",
                 "version": "3.0.4",
                 "dist": {
@@ -56,7 +89,10 @@
         "ext-mbstring": "*",
         "piwik/plugin-SecurityInfo": "^3.0",
         "geoip2/geoip2": "^2.6",
-        "diabl0/piwik-geoip2": "^0.1.5"
+        "diabl0/piwik-geoip2": "^0.1.5",
+        "piwik/piwik-icons": "^0.0",
+        "piwik/piwik-log-analytics": "^0.0.1",
+        "composer/installers": "^1.4"
     },
     "license": "GPL-3.0",
     "authors": [
@@ -67,6 +103,12 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp -R plugins/* vendor/piwik/piwik/plugins/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
+        "post-install-cmd": "cp -R plugins/* vendor/piwik/piwik/plugins/ && cp -R misc/* vendor/piwik/piwik/misc/ && cp -R icons/* vendor/piwik/piwik/plugins/Morpheus/icons/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
+    },
+    "extra": {
+        "installer-paths": {
+            "{$name}/": ["piwik/piwik-icons"],
+            "misc/{$name}": ["piwik/piwik-log-analytics"]
+        }
     }
 }

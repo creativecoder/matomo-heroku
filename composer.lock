@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87d3b9c8a973d981dd0f32c18599452a",
+    "content-hash": "32a8cf19f0edb43415e4e5fb50e1005e",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1328,6 +1328,37 @@
                 "web"
             ],
             "time": "2017-05-16T23:22:24+00:00"
+        },
+        {
+            "name": "piwik/piwik-icons",
+            "version": "0.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/piwik/piwik-icons/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "piwik-plugin",
+            "extra": {
+                "installer-name": "icons"
+            }
+        },
+        {
+            "name": "piwik/piwik-log-analytics",
+            "version": "0.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/piwik/piwik-log-analytics/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "piwik-plugin",
+            "extra": {
+                "installer-name": "log-analytics"
+            }
         },
         {
             "name": "piwik/piwik-php-tracker",
