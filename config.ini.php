@@ -5,11 +5,12 @@ host = ${DB_HOST}
 username = ${DB_USERNAME}
 password = ${DB_PASSWORD}
 dbname = ${DB_NAME}
+port = ${DB_PORT}
 tables_prefix = "piwik_"
 
 [General]
 salt = ${SALT}
-trusted_hosts[] = "analytics.grant.mk"
+trusted_hosts[] = ${TRUSTED_HOST}
 
 [Plugins]
 Plugins[] = "CorePluginsAdmin"
