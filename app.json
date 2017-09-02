@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "dokku": {
-      "predeploy": "cp $GEOIP_GEOLITE2_PATH$GEOIP_GEOLITE2_CITY_FILENAME $GEOIP_GEOLITE2_PATH$GEOIP_GEOLITE2_COUNTRY_FILENAME vendor/piwik/piwik/misc/"
-    }
-  }
-}

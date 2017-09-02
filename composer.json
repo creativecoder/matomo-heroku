@@ -103,7 +103,7 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp -R plugins/* vendor/piwik/piwik/plugins/ && cp -R misc/* vendor/piwik/piwik/misc/ && cp -R icons/* vendor/piwik/piwik/plugins/Morpheus/icons/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/"
+        "post-install-cmd": "cp -R plugins/* vendor/piwik/piwik/plugins/ && cp -R misc/* vendor/piwik/piwik/misc/ && cp -R icons/* vendor/piwik/piwik/plugins/Morpheus/icons/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/ && if [ -d .heroku ]; then cp $GEOIP_GEOLITE2_PATH$GEOIP_GEOLITE2_CITY_FILENAME $GEOIP_GEOLITE2_PATH$GEOIP_GEOLITE2_COUNTRY_FILENAME vendor/piwik/piwik/misc/; fi"
     },
     "extra": {
         "installer-paths": {
