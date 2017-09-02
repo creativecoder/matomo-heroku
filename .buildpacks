@@ -1,2 +1,2 @@
-https://github.com/heroku/heroku-buildpack-php.git#v122
-https://github.com/danstiner/heroku-buildpack-geoip-geolite2.git
+https://github.com/heroku/heroku-buildpack-php
+https://github.com/danstiner/heroku-buildpack-geoip-geolite2
