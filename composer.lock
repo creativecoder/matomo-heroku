@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "32a8cf19f0edb43415e4e5fb50e1005e",
+    "content-hash": "a22e35075687210f9495ba4a75db5cb2",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -304,16 +304,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.7.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "53d9518ffeb019c51d542ff60cb578f076d3ff16"
+                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/53d9518ffeb019c51d542ff60cb578f076d3ff16",
-                "reference": "53d9518ffeb019c51d542ff60cb578f076d3ff16",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/b3217d58609e9c8e661cd41357a54d926c4a2a1a",
+                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2017-07-22T13:00:15+00:00"
+            "time": "2017-08-25T07:02:50+00:00"
         },
         {
             "name": "geoip2/geoip2",
@@ -1441,16 +1441,16 @@
         },
         {
             "name": "piwik/searchengine-and-social-list",
-            "version": "1.3.8",
+            "version": "1.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/piwik/searchengine-and-social-list.git",
-                "reference": "3e3d8e1281f5e6af2e9aa5006725a3e26982733c"
+                "reference": "1c3b662bdf6aabaf2cec10229c826a698ac3c226"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/searchengine-and-social-list/zipball/3e3d8e1281f5e6af2e9aa5006725a3e26982733c",
-                "reference": "3e3d8e1281f5e6af2e9aa5006725a3e26982733c",
+                "url": "https://api.github.com/repos/piwik/searchengine-and-social-list/zipball/1c3b662bdf6aabaf2cec10229c826a698ac3c226",
+                "reference": "1c3b662bdf6aabaf2cec10229c826a698ac3c226",
                 "shasum": ""
             },
             "type": "library",
@@ -1459,7 +1459,7 @@
                 "Public Domain"
             ],
             "description": "Search engine and social network definitions used by Piwik",
-            "time": "2017-06-01T11:49:43+00:00"
+            "time": "2017-08-30T19:29:07+00:00"
         },
         {
             "name": "psr/container",
