@@ -1,16 +1,16 @@
-# Piwik on Dokku
+# Piwik on Heroku, Dokku, or Flynn
 
 ## Installation
 
-1. Create a new app with dokku.
+1. Create a new app.
 2. Connect a mysql database to the app.
-3. Add dokku config settings for the database connection: `DB_NAME`, `DB_HOST`, `DB_PORT` `DB_USERNAME`, and `DB_PASSWORD`.
-4. Add dokku config settings for `SALT` and `TRUSTED_HOST` (the domain name you access the piwik app from)
-5. Deploy repo to dokku
+3. Update database connection in `config.ini.php` as needed
+4. Add config settings for `SALT` and `TRUSTED_HOST` (the domain name you access the piwik app from)
+5. Deploy app
 
 ## Config
 
-Dokku's filesystem is ephemeral and will be wiped out on each deploy. Any settings that piwik automatically updates in `vendor/piwik/piwik/config/config.ini.php` need to be manually duplicated in the `config.ini.php` in the repo, or they will be wiped out the next time the app is rebuilt.
+The filesystem is ephemeral and will be wiped out on each deploy. Any settings that piwik automatically updates in `vendor/piwik/piwik/config/config.ini.php` need to be manually duplicated in the `config.ini.php` in the repo, or they will be wiped out the next time the app is rebuilt.
 
 ## Plugins
 
@@ -23,6 +23,6 @@ Most piwik plugins do not include a composer.json file so you'll need to use the
 
 ## GeoIP
 
-This setup is configured to use the [GeoIP2 Plugin](https://github.com/diabl0/piwik-geoip2). The GeoLite databases are provided by a custom buildpack https://github.com/danstiner/heroku-buildpack-geoip-geolite2.git defined in `.buildpacks`.
+This setup is configured to use the [GeoIP2 Plugin](https://github.com/diabl0/piwik-geoip2). The GeoLite databases are provided by a custom buildpack https://github.com/danstiner/heroku-buildpack-geoip-geolite2 defined in `.buildpacks`.
 
 You can turn on this geolocation method on in Settings > System > Geolocation. Rebuilding the app will get a fresh copy of the GeoLite databases.
