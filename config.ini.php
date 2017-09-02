@@ -1,11 +1,11 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 ; file automatically generated or modified by Piwik; you can manually override the default values in global.ini.php by redefining them in this file.
 [database]
-host = ${DB_HOST}
-username = ${DB_USERNAME}
-password = ${DB_PASSWORD}
-dbname = ${DB_NAME}
-port = ${DB_PORT}
+host = ${MYSQL_HOST}
+username = ${MYSQL_USER}
+password = ${MYSQL_PWD}
+dbname = ${MYSQL_DATABASE}
+port = ${MYSQL_PORT}
 tables_prefix = "piwik_"
 
 [General]
