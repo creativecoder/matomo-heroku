@@ -4,7 +4,7 @@
  */
 
 // Autoload dependencies installed by composer
-require_once '../../autoload.php';
+require_once __DIR__ . '/../../autoload.php';
 
 // Bootstrap piwik application
 // Duplicated from vendor/piwik/piwik/index.php
