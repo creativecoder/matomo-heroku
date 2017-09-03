@@ -11,6 +11,7 @@ tables_prefix = "piwik_"
 [General]
 salt = ${SALT}
 trusted_hosts[] = ${TRUSTED_HOST}
+force_ssl = 1
 
 [Plugins]
 Plugins[] = "CorePluginsAdmin"
