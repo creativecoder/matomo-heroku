@@ -1251,16 +1251,16 @@
         },
         {
             "name": "piwik/piwik",
-            "version": "3.0.4",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/piwik/piwik.git",
-                "reference": "374dc8ee556eb51d95e6f04f2b910d326af554a1"
+                "reference": "4a18b35fb3f37189b999997bd90884aa0ceb6e75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/piwik/zipball/374dc8ee556eb51d95e6f04f2b910d326af554a1",
-                "reference": "374dc8ee556eb51d95e6f04f2b910d326af554a1",
+                "url": "https://api.github.com/repos/piwik/piwik/zipball/4a18b35fb3f37189b999997bd90884aa0ceb6e75",
+                "reference": "4a18b35fb3f37189b999997bd90884aa0ceb6e75",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1327,7 @@
                 "piwik",
                 "web"
             ],
-            "time": "2017-05-16T23:22:24+00:00"
+            "time": "2017-09-20T11:06:08+00:00"
         },
         {
             "name": "piwik/piwik-icons",
