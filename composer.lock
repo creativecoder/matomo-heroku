@@ -1251,16 +1251,16 @@
         },
         {
             "name": "piwik/piwik",
-            "version": "3.1.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/piwik/piwik.git",
-                "reference": "4a18b35fb3f37189b999997bd90884aa0ceb6e75"
+                "reference": "023a914aa7f3c603f5cc61301b44d502627110cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/piwik/zipball/4a18b35fb3f37189b999997bd90884aa0ceb6e75",
-                "reference": "4a18b35fb3f37189b999997bd90884aa0ceb6e75",
+                "url": "https://api.github.com/repos/piwik/piwik/zipball/023a914aa7f3c603f5cc61301b44d502627110cb",
+                "reference": "023a914aa7f3c603f5cc61301b44d502627110cb",
                 "shasum": ""
             },
             "require": {
@@ -1317,17 +1317,17 @@
                 {
                     "name": "The Piwik Team",
                     "email": "hello@piwik.org",
-                    "homepage": "http://piwik.org/the-piwik-team/"
+                    "homepage": "https://piwik.org/team/"
                 }
             ],
             "description": "the leading free/libre analytics platform",
-            "homepage": "http://piwik.org",
+            "homepage": "https://piwik.org",
             "keywords": [
                 "analytics",
                 "piwik",
                 "web"
             ],
-            "time": "2017-09-20T11:06:08+00:00"
+            "time": "2017-10-12T02:51:04+00:00"
         },
         {
             "name": "piwik/piwik-icons",
