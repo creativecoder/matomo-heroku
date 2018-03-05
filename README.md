@@ -26,3 +26,14 @@ Most piwik plugins do not include a composer.json file so you'll need to use the
 This setup is configured to use the [GeoIP2 Plugin](https://github.com/diabl0/piwik-geoip2). The GeoLite databases are provided by a custom buildpack https://github.com/danstiner/heroku-buildpack-geoip-geolite2 defined in `.buildpacks`.
 
 You can turn on this geolocation method on in Settings > System > Geolocation. Rebuilding the app will get a fresh copy of the GeoLite databases.
+
+## Heroku
+
+Heroku no longer uses the `.buildpacks` file, so you will need to specify buildpacks using the heroku cli.
+
+[Install the cli](https://devcenter.heroku.com/articles/heroku-cli) if needed, then run the following to specify the buildpacks for your app:
+
+```
+heroku buildpacks:add --index 1 https://github.com/danstiner/heroku-buildpack-geoip-geolite2
+heroku buildpacks:add --index 2 heroku/php
+```
