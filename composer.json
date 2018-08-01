@@ -5,11 +5,11 @@
         {
             "type": "package",
             "package": {
-                "name": "piwik/piwik-icons",
+                "name": "matomo/matomo-icons",
                 "type": "piwik-plugin",
-                "version": "0.0.2",
+                "version": "0.0.3",
                 "dist": {
-                    "url": "https://github.com/piwik/piwik-icons/archive/master.zip",
+                    "url": "https://github.com/matomo-org/matomo-icons/archive/master.zip",
                     "type": "zip"
                 },
                 "require": {
@@ -23,11 +23,11 @@
         {
             "type": "package",
             "package": {
-                "name": "piwik/piwik-log-analytics",
+                "name": "matomo/matomo-log-analytics",
                 "type": "piwik-plugin",
-                "version": "0.0.1",
+                "version": "0.0.2",
                 "dist": {
-                    "url": "https://github.com/piwik/piwik-log-analytics/archive/master.zip",
+                    "url": "https://github.com/matomo-org/matomo-log-analytics/archive/master.zip",
                     "type": "zip"
                 },
                 "extra": {
@@ -38,10 +38,10 @@
         {
             "type": "package",
             "package": {
-                "name": "piwik/plugin-SecurityInfo",
-                "version": "3.0.4",
+                "name": "matomo/plugin-SecurityInfo",
+                "version": "3.0.6",
                 "dist": {
-                    "url": "https://github.com/piwik/plugin-SecurityInfo/archive/3.0.4.zip",
+                    "url": "https://github.com/matomo-org/plugin-SecurityInfo/archive/3.0.6.zip",
                     "type": "zip"
                 },
                 "type": "piwik-plugin",
@@ -50,32 +50,6 @@
                 },
                 "extra": {
                     "installer-name": "SecurityInfo"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "diabl0/piwik-geoip2",
-                "version": "0.1.5",
-                "description": "Plugin for Piwik adding support for MaxMind GeoIP2 database.",
-                "license": "GPL-3.0+",
-                "authors": [
-                    {
-                      "name": "Krzysztof Szatanik",
-                      "homepage": "https://github.com/diabl0/piwik-geoip2"
-                    }
-                ],
-                "require": {
-                    "geoip2/geoip2": "^2.4"
-                },
-                "dist": {
-                    "url": "https://github.com/diabl0/piwik-geoip2/archive/v0.1.5.zip",
-                    "type": "zip"
-                },
-                "type": "piwik-plugin",
-                "extra": {
-                    "installer-name": "GeoIP2"
                 }
             }
         }
@@ -87,11 +61,10 @@
         "ext-gd": "*",
         "ext-xml": "*",
         "ext-mbstring": "*",
-        "piwik/plugin-SecurityInfo": "^3.0",
+        "matomo/plugin-SecurityInfo": "^3.0",
         "geoip2/geoip2": "^2.6",
-        "diabl0/piwik-geoip2": "^0.1.5",
-        "piwik/piwik-icons": "^0.0",
-        "piwik/piwik-log-analytics": "^0.0.1",
+        "matomo/matomo-icons": "^0.0",
+        "matomo/matomo-log-analytics": "^0.0",
         "composer/installers": "^1.4"
     },
     "license": "GPL-3.0",
@@ -107,8 +80,12 @@
     },
     "extra": {
         "installer-paths": {
-            "{$name}/": ["piwik/piwik-icons"],
-            "misc/{$name}": ["piwik/piwik-log-analytics"]
+            "{$name}/": [
+                "matomo/matomo-icons"
+            ],
+            "misc/{$name}": [
+                "matomo/matomo-log-analytics"
+            ]
         }
     }
 }

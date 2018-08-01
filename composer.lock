@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a22e35075687210f9495ba4a75db5cb2",
+    "content-hash": "f21fbddecb237e2ad5354a9939245b8e",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -276,33 +276,6 @@
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
-            "name": "diabl0/piwik-geoip2",
-            "version": "0.1.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/diabl0/piwik-geoip2/archive/v0.1.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "geoip2/geoip2": "^2.4"
-            },
-            "type": "piwik-plugin",
-            "extra": {
-                "installer-name": "GeoIP2"
-            },
-            "license": [
-                "GPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Krzysztof Szatanik",
-                    "homepage": "https://github.com/diabl0/piwik-geoip2"
-                }
-            ],
-            "description": "Plugin for Piwik adding support for MaxMind GeoIP2 database."
-        },
-        {
             "name": "doctrine/cache",
             "version": "v1.7.1",
             "source": {
@@ -468,6 +441,54 @@
             "description": "lessphp is a compiler for LESS written in PHP.",
             "homepage": "http://leafo.net/lessphp/",
             "time": "2014-11-24T18:39:20+00:00"
+        },
+        {
+            "name": "matomo/matomo-icons",
+            "version": "0.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/matomo-org/matomo-icons/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "piwik-plugin",
+            "extra": {
+                "installer-name": "icons"
+            }
+        },
+        {
+            "name": "matomo/matomo-log-analytics",
+            "version": "0.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/matomo-org/matomo-log-analytics/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "piwik-plugin",
+            "extra": {
+                "installer-name": "log-analytics"
+            }
+        },
+        {
+            "name": "matomo/plugin-SecurityInfo",
+            "version": "3.0.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/matomo-org/plugin-SecurityInfo/archive/3.0.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "piwik-plugin",
+            "extra": {
+                "installer-name": "SecurityInfo"
+            }
         },
         {
             "name": "matomo/referrer-spam-blacklist",
@@ -1389,37 +1410,6 @@
             "time": "2018-05-25T10:25:47+00:00"
         },
         {
-            "name": "piwik/piwik-icons",
-            "version": "0.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/piwik/piwik-icons/archive/master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "piwik-plugin",
-            "extra": {
-                "installer-name": "icons"
-            }
-        },
-        {
-            "name": "piwik/piwik-log-analytics",
-            "version": "0.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/piwik/piwik-log-analytics/archive/master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "piwik-plugin",
-            "extra": {
-                "installer-name": "log-analytics"
-            }
-        },
-        {
             "name": "piwik/piwik-php-tracker",
             "version": "1.4.0",
             "source": {
@@ -1458,23 +1448,6 @@
                 "tracker"
             ],
             "time": "2017-11-09T03:20:23+00:00"
-        },
-        {
-            "name": "piwik/plugin-SecurityInfo",
-            "version": "3.0.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/piwik/plugin-SecurityInfo/archive/3.0.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "piwik-plugin",
-            "extra": {
-                "installer-name": "SecurityInfo"
-            }
         },
         {
             "name": "psr/container",
