@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a22e35075687210f9495ba4a75db5cb2",
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.0.7",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "b17e6153cb7f33c7e44eb59578dc12eee5dc8e12"
+                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/b17e6153cb7f33c7e44eb59578dc12eee5dc8e12",
-                "reference": "b17e6153cb7f33c7e44eb59578dc12eee5dc8e12",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/d2c0a83b7533d6912e8d516756ebd34f893e9169",
+                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169",
                 "shasum": ""
             },
             "require": {
@@ -26,12 +26,9 @@
                 "php": "^5.3.2 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.5",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5",
                 "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0"
-            },
-            "suggest": {
-                "symfony/process": "This is necessary to reliably check whether openssl_x509_parse is vulnerable on older php versions, but can be ignored on PHP 5.5.6+"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0"
             },
             "type": "library",
             "extra": {
@@ -63,20 +60,20 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-03-06T11:59:08+00:00"
+            "time": "2018-03-29T19:57:20+00:00"
         },
         {
             "name": "composer/installers",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b"
+                "reference": "049797d727261bf27f2690430d935067710049c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
-                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/049797d727261bf27f2690430d935067710049c2",
+                "reference": "049797d727261bf27f2690430d935067710049c2",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +85,7 @@
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "^4.8.36"
             },
             "type": "composer-plugin",
             "extra": {
@@ -159,15 +156,18 @@
                 "lavalite",
                 "lithium",
                 "magento",
+                "majima",
                 "mako",
                 "mediawiki",
                 "modulework",
+                "modx",
                 "moodle",
                 "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
                 "puppet",
+                "pxcms",
                 "reindex",
                 "roundcube",
                 "shopware",
@@ -180,7 +180,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-08-09T07:53:48+00:00"
+            "time": "2017-12-29T09:13:20+00:00"
         },
         {
             "name": "composer/semver",
@@ -378,25 +378,24 @@
         },
         {
             "name": "geoip2/geoip2",
-            "version": "v2.6.0",
+            "version": "v2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/GeoIP2-php.git",
-                "reference": "9f6f1edf9901fed5cd692dd260333bf52091acd3"
+                "reference": "a807fbf65212eef5d8d2db1a1b31082b53633d77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/9f6f1edf9901fed5cd692dd260333bf52091acd3",
-                "reference": "9f6f1edf9901fed5cd692dd260333bf52091acd3",
+                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/a807fbf65212eef5d8d2db1a1b31082b53633d77",
+                "reference": "a807fbf65212eef5d8d2db1a1b31082b53633d77",
                 "shasum": ""
             },
             "require": {
                 "maxmind-db/reader": "~1.0",
-                "maxmind/web-service-common": "~0.4",
+                "maxmind/web-service-common": "~0.5",
                 "php": ">=5.4"
             },
             "require-dev": {
-                "apigen/apigen": "*",
                 "friendsofphp/php-cs-fixer": "2.*",
                 "phpunit/phpunit": "4.*",
                 "squizlabs/php_codesniffer": "3.*"
@@ -427,7 +426,7 @@
                 "geolocation",
                 "maxmind"
             ],
-            "time": "2017-07-10T17:59:43+00:00"
+            "time": "2018-04-10T15:32:59+00:00"
         },
         {
             "name": "leafo/lessphp",
@@ -471,30 +470,81 @@
             "time": "2014-11-24T18:39:20+00:00"
         },
         {
-            "name": "maxmind-db/reader",
-            "version": "v1.1.3",
+            "name": "matomo/referrer-spam-blacklist",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "7eeccf61b078bb23bb07b1a151a7e5db52871e65"
+                "url": "https://github.com/matomo-org/referrer-spam-blacklist.git",
+                "reference": "aeadc82fa18636f6e578d36cdfb709f2a85f440d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/7eeccf61b078bb23bb07b1a151a7e5db52871e65",
-                "reference": "7eeccf61b078bb23bb07b1a151a7e5db52871e65",
+                "url": "https://api.github.com/repos/matomo-org/referrer-spam-blacklist/zipball/aeadc82fa18636f6e578d36cdfb709f2a85f440d",
+                "reference": "aeadc82fa18636f6e578d36cdfb709f2a85f440d",
+                "shasum": ""
+            },
+            "replace": {
+                "piwik/referrer-spam-blacklist": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC0-1.0"
+            ],
+            "description": "Community-contributed list of referrer spammers",
+            "time": "2018-01-29T18:12:41+00:00"
+        },
+        {
+            "name": "matomo/searchengine-and-social-list",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matomo-org/searchengine-and-social-list.git",
+                "reference": "5c29a58c6cab8a78c3e625ffc615e759ef8466d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matomo-org/searchengine-and-social-list/zipball/5c29a58c6cab8a78c3e625ffc615e759ef8466d3",
+                "reference": "5c29a58c6cab8a78c3e625ffc615e759ef8466d3",
+                "shasum": ""
+            },
+            "replace": {
+                "piwik/searchengine-and-social-list": "*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC0-1.0"
+            ],
+            "description": "Search engine and social network definitions used by Matomo (formerly Piwik)",
+            "time": "2018-05-25T11:09:26+00:00"
+        },
+        {
+            "name": "maxmind-db/reader",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
+                "reference": "e042b4f8a2dff41e19019faf16427178b07fbd58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/e042b4f8a2dff41e19019faf16427178b07fbd58",
+                "reference": "e042b4f8a2dff41e19019faf16427178b07fbd58",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.1"
+                "php": ">=5.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.2.*",
+                "friendsofphp/php-cs-fixer": "2.*",
+                "phpunit/phpunit": "4.* || 5.*",
                 "satooshi/php-coveralls": "1.0.*",
-                "squizlabs/php_codesniffer": "2.*"
+                "squizlabs/php_codesniffer": "3.*"
             },
             "suggest": {
-                "ext-bcmath": "bcmath or gmp is requred for decoding larger integers with the pure PHP decoder",
-                "ext-gmp": "bcmath or gmp is requred for decoding larger integers with the pure PHP decoder",
+                "ext-bcmath": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+                "ext-gmp": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
                 "ext-maxminddb": "A C-based database decoder that provides significantly faster lookups"
             },
             "type": "library",
@@ -523,20 +573,20 @@
                 "geolocation",
                 "maxmind"
             ],
-            "time": "2017-01-19T23:49:38+00:00"
+            "time": "2018-02-21T21:23:33+00:00"
         },
         {
             "name": "maxmind/web-service-common",
-            "version": "v0.4.0",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/web-service-common-php.git",
-                "reference": "622f7c732a7f9c4c62497fc103939e042b6bdb88"
+                "reference": "61a9836fa3bb1743ab89752bae5005d71e78c73b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/622f7c732a7f9c4c62497fc103939e042b6bdb88",
-                "reference": "622f7c732a7f9c4c62497fc103939e042b6bdb88",
+                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/61a9836fa3bb1743ab89752bae5005d71e78c73b",
+                "reference": "61a9836fa3bb1743ab89752bae5005d71e78c73b",
                 "shasum": ""
             },
             "require": {
@@ -569,7 +619,7 @@
             ],
             "description": "Internal MaxMind Web Service API",
             "homepage": "https://github.com/maxmind/web-service-common-php",
-            "time": "2017-07-06T17:48:21+00:00"
+            "time": "2018-02-12T22:31:54+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -953,16 +1003,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "5.4.3",
+            "version": "5.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "8ecded470bb0255c93f2996f78bb3b644c06599a"
+                "reference": "3f9255659595f3e289f473778bb6c51aa72abbbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/8ecded470bb0255c93f2996f78bb3b644c06599a",
-                "reference": "8ecded470bb0255c93f2996f78bb3b644c06599a",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/3f9255659595f3e289f473778bb6c51aa72abbbd",
+                "reference": "3f9255659595f3e289f473778bb6c51aa72abbbd",
                 "shasum": ""
             },
             "require": {
@@ -984,6 +1034,7 @@
                 "doctrine/cache": "~1.4",
                 "mnapoli/phpunit-easymock": "~0.2.0",
                 "ocramius/proxy-manager": "~1.0|~2.0",
+                "phpbench/phpbench": "@dev",
                 "phpunit/phpunit": "~4.5"
             },
             "suggest": {
@@ -1011,24 +1062,24 @@
                 "dependency injection",
                 "di"
             ],
-            "time": "2017-04-11T19:42:20+00:00"
+            "time": "2017-12-03T08:20:27+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PhpDocReader.git",
-                "reference": "83f5ead159defccfa8e7092e5b6c1c533b326d68"
+                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/83f5ead159defccfa8e7092e5b6c1c533b326d68",
-                "reference": "83f5ead159defccfa8e7092e5b6c1c533b326d68",
+                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/7d0de60b9341933c8afd172a6255cd7557601e0e",
+                "reference": "7d0de60b9341933c8afd172a6255cd7557601e0e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.6"
@@ -1048,20 +1099,20 @@
                 "phpdoc",
                 "reflection"
             ],
-            "time": "2015-11-29T10:34:25+00:00"
+            "time": "2018-02-18T17:39:01+00:00"
         },
         {
             "name": "piwik/cache",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/piwik/component-cache.git",
-                "reference": "5f6652574440d9886741918a1e4dc1c555820501"
+                "url": "https://github.com/matomo-org/component-cache.git",
+                "reference": "0dcaaba79735bc2d60b72f020f6371eca633b578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/component-cache/zipball/5f6652574440d9886741918a1e4dc1c555820501",
-                "reference": "5f6652574440d9886741918a1e4dc1c555820501",
+                "url": "https://api.github.com/repos/matomo-org/component-cache/zipball/0dcaaba79735bc2d60b72f020f6371eca633b578",
+                "reference": "0dcaaba79735bc2d60b72f020f6371eca633b578",
                 "shasum": ""
             },
             "require": {
@@ -1095,19 +1146,20 @@
                 "file",
                 "redis"
             ],
-            "time": "2016-11-15T02:33:06+00:00"
+            "abandoned": "matomo/cache",
+            "time": "2018-03-05T02:55:54+00:00"
         },
         {
             "name": "piwik/decompress",
             "version": "1.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/piwik/component-decompress.git",
+                "url": "https://github.com/matomo-org/component-decompress.git",
                 "reference": "15088059c38378939db8a3490b67b569797a6a3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/component-decompress/zipball/15088059c38378939db8a3490b67b569797a6a3a",
+                "url": "https://api.github.com/repos/matomo-org/component-decompress/zipball/15088059c38378939db8a3490b67b569797a6a3a",
                 "reference": "15088059c38378939db8a3490b67b569797a6a3a",
                 "shasum": ""
             },
@@ -1131,20 +1183,21 @@
             "license": [
                 "LGPL-3.0"
             ],
+            "abandoned": "matomo/decompress",
             "time": "2017-07-14T10:45:10+00:00"
         },
         {
             "name": "piwik/device-detector",
-            "version": "3.8.1",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/piwik/device-detector.git",
-                "reference": "91e17ecbd7ad6fe3085d5508aacdf858281087e5"
+                "url": "https://github.com/matomo-org/device-detector.git",
+                "reference": "9e778c0c046987c6c4a949d5d9e000f072301962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/device-detector/zipball/91e17ecbd7ad6fe3085d5508aacdf858281087e5",
-                "reference": "91e17ecbd7ad6fe3085d5508aacdf858281087e5",
+                "url": "https://api.github.com/repos/matomo-org/device-detector/zipball/9e778c0c046987c6c4a949d5d9e000f072301962",
+                "reference": "9e778c0c046987c6c4a949d5d9e000f072301962",
                 "shasum": ""
             },
             "require": {
@@ -1153,7 +1206,10 @@
             },
             "require-dev": {
                 "fabpot/php-cs-fixer": "~1.7",
-                "phpunit/phpunit": "4.1.*"
+                "matthiasmullie/scrapbook": "@stable",
+                "phpunit/phpunit": "^4.8.36",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0"
             },
             "suggest": {
                 "doctrine/cache": "Can directly be used for caching purpose"
@@ -1166,23 +1222,23 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-3.0+"
+                "LGPL-3.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "The Piwik Team",
-                    "email": "hello@piwik.org",
-                    "homepage": "http://piwik.org/the-piwik-team/"
+                    "name": "The Matomo Team",
+                    "email": "hello@matomo.org",
+                    "homepage": "https://matomo.org/team/"
                 }
             ],
             "description": "The Universal Device Detection library, that parses User Agents and detects devices (desktop, tablet, mobile, tv, cars, console, etc.), clients (browsers, media players, mobile apps, feed readers, libraries, etc), operating systems, devices, brands and models.",
-            "homepage": "http://piwik.org",
+            "homepage": "https://matomo.org",
             "keywords": [
                 "devicedetection",
                 "parser",
                 "useragent"
             ],
-            "time": "2017-07-25T21:21:36+00:00"
+            "time": "2018-07-31T15:47:21+00:00"
         },
         {
             "name": "piwik/ini",
@@ -1215,6 +1271,7 @@
             "license": [
                 "LGPL-3.0"
             ],
+            "abandoned": "matomo/ini",
             "time": "2016-01-14T21:13:33+00:00"
         },
         {
@@ -1251,21 +1308,24 @@
         },
         {
             "name": "piwik/piwik",
-            "version": "3.2.0",
+            "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/piwik/piwik.git",
-                "reference": "023a914aa7f3c603f5cc61301b44d502627110cb"
+                "url": "https://github.com/matomo-org/matomo.git",
+                "reference": "ce33be48d9022b4d2fdbe1e29f6903c0e38fa87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/piwik/zipball/023a914aa7f3c603f5cc61301b44d502627110cb",
-                "reference": "023a914aa7f3c603f5cc61301b44d502627110cb",
+                "url": "https://api.github.com/repos/matomo-org/matomo/zipball/ce33be48d9022b4d2fdbe1e29f6903c0e38fa87c",
+                "reference": "ce33be48d9022b4d2fdbe1e29f6903c0e38fa87c",
                 "shasum": ""
             },
             "require": {
                 "composer/semver": "~1.3.0",
+                "geoip2/geoip2": "^2.8",
                 "leafo/lessphp": "~0.5.0",
+                "matomo/referrer-spam-blacklist": "~1.0",
+                "matomo/searchengine-and-social-list": "~1.0",
                 "monolog/monolog": "~1.11",
                 "mustangostang/spyc": "~0.5.0",
                 "pear/pear_exception": "~1.0.0",
@@ -1277,8 +1337,6 @@
                 "piwik/ini": "^1.0.6",
                 "piwik/network": "~0",
                 "piwik/piwik-php-tracker": "^1.0",
-                "piwik/referrer-spam-blacklist": "~1.0",
-                "piwik/searchengine-and-social-list": "~1.0",
                 "psr/log": "~1.0",
                 "symfony/console": "~2.6.0",
                 "symfony/event-dispatcher": "~2.6.0",
@@ -1315,19 +1373,20 @@
             ],
             "authors": [
                 {
-                    "name": "The Piwik Team",
-                    "email": "hello@piwik.org",
-                    "homepage": "https://piwik.org/team/"
+                    "name": "The Matomo Team",
+                    "email": "hello@matomo.org",
+                    "homepage": "https://matomo.org/team/"
                 }
             ],
             "description": "the leading free/libre analytics platform",
-            "homepage": "https://piwik.org",
+            "homepage": "https://matomo.org",
             "keywords": [
                 "analytics",
+                "matomo",
                 "piwik",
                 "web"
             ],
-            "time": "2017-10-12T02:51:04+00:00"
+            "time": "2018-05-25T10:25:47+00:00"
         },
         {
             "name": "piwik/piwik-icons",
@@ -1362,16 +1421,16 @@
         },
         {
             "name": "piwik/piwik-php-tracker",
-            "version": "1.2.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/piwik/piwik-php-tracker.git",
-                "reference": "5f435290eb8a82b14630882c6e52520eef13f883"
+                "reference": "f9a0168c87f01f2d5de95029a1ba0d1fd6c3d5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piwik/piwik-php-tracker/zipball/5f435290eb8a82b14630882c6e52520eef13f883",
-                "reference": "5f435290eb8a82b14630882c6e52520eef13f883",
+                "url": "https://api.github.com/repos/piwik/piwik-php-tracker/zipball/f9a0168c87f01f2d5de95029a1ba0d1fd6c3d5ab",
+                "reference": "f9a0168c87f01f2d5de95029a1ba0d1fd6c3d5ab",
                 "shasum": ""
             },
             "type": "library",
@@ -1398,7 +1457,7 @@
                 "piwik",
                 "tracker"
             ],
-            "time": "2017-02-18T09:41:30+00:00"
+            "time": "2017-11-09T03:20:23+00:00"
         },
         {
             "name": "piwik/plugin-SecurityInfo",
@@ -1416,50 +1475,6 @@
             "extra": {
                 "installer-name": "SecurityInfo"
             }
-        },
-        {
-            "name": "piwik/referrer-spam-blacklist",
-            "version": "1.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/piwik/referrer-spam-blacklist.git",
-                "reference": "ad7c2296d5bac58c5bea771f355dc49dd4fc8141"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/piwik/referrer-spam-blacklist/zipball/ad7c2296d5bac58c5bea771f355dc49dd4fc8141",
-                "reference": "ad7c2296d5bac58c5bea771f355dc49dd4fc8141",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Public Domain"
-            ],
-            "description": "Community-contributed list of referrer spammers",
-            "time": "2017-03-28T04:31:29+00:00"
-        },
-        {
-            "name": "piwik/searchengine-and-social-list",
-            "version": "1.3.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/piwik/searchengine-and-social-list.git",
-                "reference": "1c3b662bdf6aabaf2cec10229c826a698ac3c226"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/piwik/searchengine-and-social-list/zipball/1c3b662bdf6aabaf2cec10229c826a698ac3c226",
-                "reference": "1c3b662bdf6aabaf2cec10229c826a698ac3c226",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Public Domain"
-            ],
-            "description": "Search engine and social network definitions used by Piwik",
-            "time": "2017-08-30T19:29:07+00:00"
         },
         {
             "name": "psr/container",
@@ -1734,17 +1749,72 @@
             "time": "2015-06-25T11:21:15+00:00"
         },
         {
-            "name": "szymach/c-pchart",
-            "version": "v2.0.10",
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/szymach/c-pchart.git",
-                "reference": "12cd5ab0f24a277c4d2596eaa3bff89f4a7827cc"
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/szymach/c-pchart/zipball/12cd5ab0f24a277c4d2596eaa3bff89f4a7827cc",
-                "reference": "12cd5ab0f24a277c4d2596eaa3bff89f4a7827cc",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+                "reference": "7cc359f1b7b80fc25ed7796be7d96adc9b354bae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2018-04-30T19:57:29+00:00"
+        },
+        {
+            "name": "szymach/c-pchart",
+            "version": "v2.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/szymach/c-pchart.git",
+                "reference": "1fac97cdafd00b58d366dbc80ab0d84222328a13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/szymach/c-pchart/zipball/1fac97cdafd00b58d366dbc80ab0d84222328a13",
+                "reference": "1fac97cdafd00b58d366dbc80ab0d84222328a13",
                 "shasum": ""
             },
             "require": {
@@ -1795,20 +1865,20 @@
                 "pchart",
                 "statistics"
             ],
-            "time": "2017-08-21T20:29:42+00:00"
+            "time": "2017-11-25T22:19:20+00:00"
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.2.13",
+            "version": "6.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "95c5938aafe4b20df1454dbddb3e5005c0b26f64"
+                "reference": "64fc19439863e1b1314487a72a74d9bfd0b55a53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/95c5938aafe4b20df1454dbddb3e5005c0b26f64",
-                "reference": "95c5938aafe4b20df1454dbddb3e5005c0b26f64",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/64fc19439863e1b1314487a72a74d9bfd0b55a53",
+                "reference": "64fc19439863e1b1314487a72a74d9bfd0b55a53",
                 "shasum": ""
             },
             "require": {
@@ -1837,13 +1907,13 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPLv3"
+                "LGPL-3.0"
             ],
             "authors": [
                 {
                     "name": "Nicola Asuni",
                     "email": "info@tecnick.com",
-                    "homepage": "http://nicolaasuni.tecnick.com"
+                    "role": "lead"
                 }
             ],
             "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
@@ -1857,7 +1927,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2017-04-26T08:14:48+00:00"
+            "time": "2018-02-24T11:48:20+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -1902,30 +1972,31 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.34.4",
+            "version": "v1.35.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee"
+                "reference": "7e081e98378a1e78c29cc9eba4aefa5d78a05d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f878bab48edb66ad9c6ed626bf817f60c6c096ee",
-                "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7e081e98378a1e78c29cc9eba4aefa5d78a05d2a",
+                "reference": "7e081e98378a1e78c29cc9eba4aefa5d78a05d2a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.3",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.34-dev"
+                    "dev-master": "1.35-dev"
                 }
             },
             "autoload": {
@@ -1954,16 +2025,16 @@
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "homepage": "https://twig.symfony.com/contributors",
                     "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
+            "homepage": "https://twig.symfony.com",
             "keywords": [
                 "templating"
             ],
-            "time": "2017-07-04T13:19:31+00:00"
+            "time": "2018-07-13T07:12:17+00:00"
         }
     ],
     "packages-dev": [],
