@@ -7,7 +7,7 @@
             "package": {
                 "name": "matomo/matomo-icons",
                 "type": "piwik-plugin",
-                "version": "0.0.3",
+                "version": "0.0.4",
                 "dist": {
                     "url": "https://github.com/matomo-org/matomo-icons/archive/master.zip",
                     "type": "zip"
@@ -25,7 +25,7 @@
             "package": {
                 "name": "matomo/matomo-log-analytics",
                 "type": "piwik-plugin",
-                "version": "0.0.2",
+                "version": "0.0.3",
                 "dist": {
                     "url": "https://github.com/matomo-org/matomo-log-analytics/archive/master.zip",
                     "type": "zip"
@@ -55,17 +55,17 @@
         }
     ],
     "require": {
-        "piwik/piwik": "^3.0",
-        "php": "^7.1",
+        "piwik/piwik": "^3.7",
+        "php": "^7.3",
         "ext-curl": "*",
         "ext-gd": "*",
         "ext-xml": "*",
         "ext-mbstring": "*",
         "matomo/plugin-SecurityInfo": "^3.0",
-        "geoip2/geoip2": "^2.6",
-        "matomo/matomo-icons": "^0.0",
-        "matomo/matomo-log-analytics": "^0.0",
-        "composer/installers": "^1.4"
+        "geoip2/geoip2": "^2.9",
+        "matomo/matomo-icons": "^0.0.4",
+        "matomo/matomo-log-analytics": "^0.0.3",
+        "composer/installers": "^1.6"
     },
     "license": "GPL-3.0",
     "authors": [
