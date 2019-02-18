@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42ea3cc890fcc958f58fc76aba9b7811",
+    "content-hash": "7f84495c075ada0be64b379cdad9c8b3",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1386,16 +1386,16 @@
         },
         {
             "name": "piwik/piwik",
-            "version": "3.7.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/matomo.git",
-                "reference": "4baf32cfe4fbe246381bc385d74bf3ab841fee1a"
+                "reference": "5971154fb0bccb4c28c590734765b43ee2b92256"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/matomo/zipball/4baf32cfe4fbe246381bc385d74bf3ab841fee1a",
-                "reference": "4baf32cfe4fbe246381bc385d74bf3ab841fee1a",
+                "url": "https://api.github.com/repos/matomo-org/matomo/zipball/5971154fb0bccb4c28c590734765b43ee2b92256",
+                "reference": "5971154fb0bccb4c28c590734765b43ee2b92256",
                 "shasum": ""
             },
             "require": {
@@ -1415,7 +1415,7 @@
                 "piwik/device-detector": "~3.0",
                 "piwik/ini": "^1.0.6",
                 "piwik/network": "~0",
-                "piwik/piwik-php-tracker": "^1.0",
+                "piwik/piwik-php-tracker": "^1.0.0",
                 "psr/log": "~1.0",
                 "symfony/console": "~2.6.0",
                 "symfony/event-dispatcher": "~2.6.0",
@@ -1465,7 +1465,7 @@
                 "piwik",
                 "web"
             ],
-            "time": "2018-11-19T02:03:41+00:00"
+            "time": "2019-01-21T18:16:29+00:00"
         },
         {
             "name": "piwik/piwik-php-tracker",
