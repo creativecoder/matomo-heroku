@@ -84,7 +84,7 @@
         }
     ],
     "require": {
-        "piwik/piwik": "^3.11",
+        "piwik/piwik": "^4.0",
         "php": "^7.3",
         "ext-curl": "*",
         "ext-gd": "*",
