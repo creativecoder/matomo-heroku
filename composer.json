@@ -94,7 +94,7 @@
         "geoip2/geoip2": "^2.11",
         "matomo/matomo-icons": "^0.0.4",
         "matomo/matomo-log-analytics": "^0.0.3",
-        "composer/installers": "^1.7"
+        "composer/installers": "^2.0"
     },
     "license": "GPL-3.0",
     "authors": [
