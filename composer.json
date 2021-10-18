@@ -7,13 +7,13 @@
             "package": {
                 "name": "matomo/matomo-icons",
                 "type": "piwik-plugin",
-                "version": "0.0.5",
+                "version": "0.0.6",
                 "dist": {
                     "url": "https://github.com/matomo-org/matomo-icons/archive/master.zip",
                     "type": "zip"
                 },
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 },
                 "extra": {
                     "installer-name": "icons"
@@ -25,7 +25,7 @@
             "package": {
                 "name": "matomo/matomo-log-analytics",
                 "type": "piwik-plugin",
-                "version": "0.0.3",
+                "version": "4.0.0",
                 "dist": {
                     "url": "https://github.com/matomo-org/matomo-log-analytics/archive/master.zip",
                     "type": "zip"
@@ -39,14 +39,14 @@
             "type": "package",
             "package": {
                 "name": "matomo/plugin-security-info",
-                "version": "3.0.7",
+                "version": "4.0.2",
                 "dist": {
-                    "url": "https://github.com/matomo-org/plugin-SecurityInfo/archive/3.0.7.zip",
+                    "url": "https://github.com/matomo-org/plugin-SecurityInfo/archive/4.0.2.zip",
                     "type": "zip"
                 },
                 "type": "piwik-plugin",
                 "require": {
-                    "composer/installers": "~1.0"
+                    "composer/installers": "~2.0"
                 },
                 "extra": {
                     "installer-name": "SecurityInfo"
@@ -84,17 +84,17 @@
         }
     ],
     "require": {
-        "piwik/piwik": "^3.11",
+        "matomo/matomo": "^4.5.0",
         "php": "^7.3",
         "ext-curl": "*",
         "ext-gd": "*",
         "ext-xml": "*",
         "ext-mbstring": "*",
-        "matomo/plugin-security-info": "^3.0",
+        "matomo/plugin-security-info": "^4.0.0",
         "geoip2/geoip2": "^2.11",
-        "matomo/matomo-icons": "^0.0.4",
-        "matomo/matomo-log-analytics": "^0.0.3",
-        "composer/installers": "^1.7"
+        "matomo/matomo-icons": "^0.0.6",
+        "matomo/matomo-log-analytics": "^4.0.0",
+        "composer/installers": "^2.0"
     },
     "license": "GPL-3.0",
     "authors": [
@@ -105,7 +105,7 @@
     ],
     "minimum-stability": "stable",
     "scripts": {
-        "post-install-cmd": "cp -R plugins/* vendor/piwik/piwik/plugins/ && cp -R misc/* vendor/piwik/piwik/misc/ && cp -R icons/* vendor/piwik/piwik/plugins/Morpheus/icons/ && cp index.php vendor/piwik/piwik/ && cp config.ini.php vendor/piwik/piwik/config/ && if [ -d .heroku ]; then cp .geoip/share/GeoLite2-City.mmdb .geoip/share/GeoLite2-Country.mmdb vendor/piwik/piwik/misc/; fi"
+        "post-install-cmd": "cp -R plugins/* vendor/matomo/matomo/plugins/ && cp -R misc/* vendor/matomo/matomo/misc/ && cp -R icons/* vendor/matomo/matomo/plugins/Morpheus/icons/ && cp index.php vendor/matomo/matomo/ && cp config.ini.php vendor/matomo/matomo/config/ && if [ -d .heroku ]; then cp .geoip/share/GeoLite2-City.mmdb .geoip/share/GeoLite2-Country.mmdb vendor/matomo/matomo/misc/; fi"
     },
     "extra": {
         "installer-paths": {
