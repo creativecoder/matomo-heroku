@@ -91,7 +91,7 @@
         "ext-xml": "*",
         "ext-mbstring": "*",
         "matomo/plugin-security-info": "^4.0.0",
-        "geoip2/geoip2": "^2.11",
+        "geoip2/geoip2": "^2.12",
         "matomo/matomo-icons": "^0.0.6",
         "matomo/matomo-log-analytics": "^4.0.0",
         "composer/installers": "^2.1"
