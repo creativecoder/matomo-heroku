@@ -84,7 +84,7 @@
         }
     ],
     "require": {
-        "matomo/matomo": "^4.5.0",
+        "matomo/matomo": "^4.10.1",
         "php": "^7.3",
         "ext-curl": "*",
         "ext-gd": "*",
