@@ -1,4 +1,8 @@
-# Matomo (aka Piwik) on Heroku, Dokku, or Flynn
+# DEPRECATED Matomo (aka Piwik) on Heroku, Dokku, or Flynn
+
+Note, I'm no longer running Matomo, so this repo is not active. It still may be a useful reference for those looking to setup Matomo on Heroku or Dokku.
+
+---
 
 Even though the application has been renamed from Piwik to Matomo, the most of the composer packages are still namespaced using `piwik`. This is being updated for Matomo 4 (https://github.com/matomo-org/matomo/issues/12519).
 
